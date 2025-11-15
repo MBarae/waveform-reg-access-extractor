@@ -1,6 +1,6 @@
 """Waveform Register Access Extractor - A modular tool for reverse engineering register accesses from digital waveforms."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.0.0"
 __author__ = "Mohamed Barae Buri"
 __email__ = "mbaraeburi@outlook.com"
 

@@ -24,7 +24,7 @@ else:
 
 setup(
     name="waveform-reg-access-extractor",
-    version="0.1.0",
+    version="0.1.0.0",
     author="Mohamed Barae Buri",
     author_email="mbaraeburi@outlook.com",
     description="A modular tool for reverse engineering register accesses from digital waveforms",
