@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" 
+                  xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+  
+  <ipxact:vendor>your.company</ipxact:vendor>
+  <ipxact:library>your.library</ipxact:library>
+  <ipxact:name>TEST_BANK_PARTIAL</ipxact:name>
+  <ipxact:version>1.0</ipxact:version>
+  
+  <ipxact:memoryMaps>
+    <ipxact:memoryMap>
+      <ipxact:name>TEST_BANK</ipxact:name>
+      <ipxact:addressBlock>
+        <ipxact:name>TEST_BANK</ipxact:name>
+        <ipxact:baseAddress>0x0</ipxact:baseAddress>
+        <ipxact:range>0x100</ipxact:range>
+        <ipxact:width>32</ipxact:width>
+        
+        <!-- Register0 - Partial field definition to test unidentified ranges -->
+        <!-- This register has fields only covering bits 0-7, 8-15 (reserved), and 16-23 -->
+        <!-- Bits 24-31 are undefined and will show as unidentified[24:31] -->
+        <ipxact:register>
+          <ipxact:name>Register0</ipxact:name>
+          <ipxact:displayName>REGISTER0</ipxact:displayName>
+          <ipxact:addressOffset>0x00</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:reset>
+            <ipxact:value>0x0</ipxact:value>
+            <ipxact:mask>0xFFFFFFFF</ipxact:mask>
+          </ipxact:reset>
+          <!-- Data field: bits 0-7 -->
+          <ipxact:field>
+            <ipxact:name>data</ipxact:name>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:bitWidth>8</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+          <!-- Reserved field: bits 8-15 -->
+          <ipxact:field>
+            <ipxact:name>reserved</ipxact:name>
+            <ipxact:bitOffset>8</ipxact:bitOffset>
+            <ipxact:bitWidth>8</ipxact:bitWidth>
+            <ipxact:access>reserved</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+          <!-- Status field: bits 16-23 -->
+          <ipxact:field>
+            <ipxact:name>status</ipxact:name>
+            <ipxact:bitOffset>16</ipxact:bitOffset>
+            <ipxact:bitWidth>8</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+          <!-- Bits 24-31 are not defined - will show as unidentified[24:31] -->
+        </ipxact:register>
+        
+        <!-- Register1 - Same address as original but with different partial fields -->
+        <!-- This register has fields at bits 0-15 and 24-31, leaving bits 16-23 unidentified -->
+        <ipxact:register>
+          <ipxact:name>Register1</ipxact:name>
+          <ipxact:displayName>REGISTER1</ipxact:displayName>
+          <ipxact:addressOffset>0x04</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-only</ipxact:access>
+          <ipxact:reset>
+            <ipxact:value>0x0</ipxact:value>
+            <ipxact:mask>0xFFFFFFFF</ipxact:mask>
+          </ipxact:reset>
+          <!-- Lower field: bits 0-15 -->
+          <ipxact:field>
+            <ipxact:name>lower</ipxact:name>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:bitWidth>16</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+          <!-- Bits 16-23 are not defined - will show as unidentified[16:23] -->
+          <!-- Upper field: bits 24-31 -->
+          <ipxact:field>
+            <ipxact:name>upper</ipxact:name>
+            <ipxact:bitOffset>24</ipxact:bitOffset>
+            <ipxact:bitWidth>8</ipxact:bitWidth>
+            <ipxact:access>read-only</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+        </ipxact:register>
+        
+        <!-- Register2 - Multiple non-contiguous unidentified ranges -->
+        <!-- Fields at bits 0-7, 16-23, leaving bits 8-15 and 24-31 unidentified -->
+        <ipxact:register>
+          <ipxact:name>Register2</ipxact:name>
+          <ipxact:displayName>REGISTER2</ipxact:displayName>
+          <ipxact:addressOffset>0x08</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>read-write</ipxact:access>
+          <ipxact:reset>
+            <ipxact:value>0x0</ipxact:value>
+            <ipxact:mask>0xFFFFFFFF</ipxact:mask>
+          </ipxact:reset>
+          <!-- Field 1: bits 0-7 -->
+          <ipxact:field>
+            <ipxact:name>field1</ipxact:name>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:bitWidth>8</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+          <!-- Bits 8-15 are not defined - will show as unidentified[8:15] -->
+          <!-- Field 2: bits 16-23 -->
+          <ipxact:field>
+            <ipxact:name>field2</ipxact:name>
+            <ipxact:bitOffset>16</ipxact:bitOffset>
+            <ipxact:bitWidth>8</ipxact:bitWidth>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+          <!-- Bits 24-31 are not defined - will show as unidentified[24:31] -->
+        </ipxact:register>
+        
+        <!-- Register3 - Keep it simple for comparison -->
+        <ipxact:register>
+          <ipxact:name>Register3</ipxact:name>
+          <ipxact:displayName>REGISTER3</ipxact:displayName>
+          <ipxact:addressOffset>0x0C</ipxact:addressOffset>
+          <ipxact:size>32</ipxact:size>
+          <ipxact:access>write-only</ipxact:access>
+          <ipxact:reset>
+            <ipxact:value>0x0</ipxact:value>
+            <ipxact:mask>0xFFFFFFFF</ipxact:mask>
+          </ipxact:reset>
+          <ipxact:field>
+            <ipxact:name>reg3_field0</ipxact:name>
+            <ipxact:bitOffset>0</ipxact:bitOffset>
+            <ipxact:bitWidth>32</ipxact:bitWidth>
+            <ipxact:access>write-only</ipxact:access>
+            <ipxact:resetValue>0x0</ipxact:resetValue>
+          </ipxact:field>
+        </ipxact:register>
+      </ipxact:addressBlock>
+    </ipxact:memoryMap>
+  </ipxact:memoryMaps>
+</ipxact:component>

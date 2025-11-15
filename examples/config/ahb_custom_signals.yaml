@@ -1,0 +1,8 @@
+# Example AHB signal mapping configuration
+# This file maps standard AHB signal names to custom testbench signal names
+
+protocols:
+  ahb:
+    signal_mappings:
+      # Map standard AHB clock to custom clock signal
+      hclk: "clk"

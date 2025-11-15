@@ -1,0 +1,12 @@
+# APB Protocol Signal Mapping Configuration
+# Maps standard APB signals to custom testbench signal names
+# 
+# The VCD file uses standard APB signal names (psel, penable, paddr, etc.)
+# but uses 'clk' instead of 'pclk' for the clock signal
+
+protocols:
+  apb:
+    signal_mappings:
+      # Map standard APB clock to custom clock signal
+      pclk: "clk"
+      # All other signals use standard APB names (psel, penable, paddr, pwrite, pwdata, prdata, pready, pslverr)
