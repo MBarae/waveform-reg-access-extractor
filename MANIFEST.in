@@ -1,0 +1,11 @@
+# Include examples directory with all necessary files
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include examples *.vcd
+recursive-include examples *.xml
+recursive-include examples *.yml
+recursive-include examples *.yaml
+recursive-include examples *.sh
+recursive-include examples *.md
+

@@ -1,0 +1,524 @@
+$date
+	Fri Nov 14 12:10:56 2025
+
+$end
+$version
+	nvc 1.17-devel
+$end
+$timescale
+	1fs
+$end
+$attrbegin misc 03 /home/baraeburi/nvc_explore/examples/apb_bank/rtl/tb_top.vhd 1 $end
+$attrbegin misc 04 1 7 $end
+$scope vhdl_architecture tb_top $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 ! clk $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 " rst_n $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 # psel $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 $ penable $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 % pwrite $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 3 & pprot[2:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 ' pstrb[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 16 ( paddr[15:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 ) pwdata[31:0] $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 * pready $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 + pslverr $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 , prdata[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 - register1_reg1_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 . register0_reg0_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 / register2_reg2_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 0 register3_reg3_field0[31:0] $end
+$attrbegin misc 03 /home/baraeburi/nvc_explore/examples/apb_bank/rtl/apb_bank.vhd 2 $end
+$attrbegin misc 04 2 33 $end
+$scope vhdl_architecture dut $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 ! clk $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 " rst_n $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 - register1_reg1_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 1 register0_reg0_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 2 register2_reg2_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 3 register3_reg3_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 # psel $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 $ penable $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 % pwrite $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 3 & pprot[2:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 ' pstrb[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 16 ( paddr[15:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 ) pwdata[31:0] $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 4 pready $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 5 pslverr $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 6 prdata[31:0] $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 7 rd_ena $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 8 wr_ena $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 9 byte_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 16 : addr[15:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 ; wr_data[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 < rd_data[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 = valid_access[3:0] $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 > bank_error $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 ? access_error $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 @ psel_d1 $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 A local_addr[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 B register0_decoded[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 C register1_decoded[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 D register2_decoded[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 E register3_decoded[3:0] $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 F register0_rd_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 G register0_wr_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 H register1_rd_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 I register1_wr_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 J register2_rd_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 K register2_wr_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 L register3_rd_unlocked $end
+$attrbegin misc 02 STD_LOGIC 1030 $end
+$var logic 1 M register3_wr_unlocked $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 N register0_rd_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 O register0_wr_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 P register1_rd_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 Q register2_rd_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 R register2_wr_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 4 S register3_wr_ena[3:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 T reg0_reg0_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 U reg2_reg2_field0[31:0] $end
+$attrbegin misc 02 STD_LOGIC_VECTOR 1029 $end
+$var logic 32 V reg3_reg3_field0[31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU V
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU U
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU T
+b0000 S
+b0000 R
+b0000 Q
+b0000 P
+b0000 O
+b0000 N
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1F
+b0000 E
+b0000 D
+b0000 C
+b0000 B
+bUU00 A
+u@
+u?
+u>
+b0000 =
+b00000000000000000000000000000000 <
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU ;
+bUUUUUUUUUUUUUU00 :
+b1111 9
+u8
+u7
+b00000000000000000000000000000000 6
+u5
+14
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 3
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 2
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 1
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 0
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU /
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU .
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU -
+b00000000000000000000000000000000 ,
+u+
+1*
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU )
+bUUUUUUUUUUUUUUUU (
+bUUUU '
+bUUU &
+u%
+u$
+u#
+1"
+0!
+$end
+#5000000
+1!
+#10000000
+0!
+0"
+0#
+0$
+0%
+b000 &
+b0000 '
+b0000000000000000 (
+b00000000000000000000000000000000 )
+0+
+b00000000000000000000000000000000 -
+b00000000000000000000000000000000 .
+b00000000000000000000000000000000 /
+b00000000000000000000000000000000 0
+b00000000000000000000000000000000 1
+b00000000000000000000000000000000 2
+b00000000000000000000000000000000 3
+05
+07
+08
+b0000000000000000 :
+b00000000000000000000000000000000 ;
+0>
+0?
+0@
+b0000 A
+b1111 B
+b00000000000000000000000000000000 T
+b00000000000000000000000000000000 U
+b00000000000000000000000000000000 V
+#15000000
+1!
+#20000000
+0!
+1"
+#25000000
+1!
+#30000000
+0!
+#35000000
+1!
+b0000 B
+b1000 A
+b10101010101010101010101010101010 ;
+b0000000000001000 :
+b10101010101010101010101010101010 )
+b0000000000001000 (
+b1111 '
+1%
+1#
+b1111 D
+#40000000
+0!
+#45000000
+1!
+1@
+18
+1$
+b1111 =
+b1111 R
+#50000000
+0!
+#55000000
+1!
+b0000 R
+b0000 =
+0$
+08
+0#
+b10101010101010101010101010101010 U
+b10101010101010101010101010101010 2
+b10101010101010101010101010101010 /
+#60000000
+0!
+#65000000
+1!
+1#
+0@
+0%
+#70000000
+0!
+#75000000
+1!
+1@
+1$
+b1111 =
+17
+b10101010101010101010101010101010 ,
+b10101010101010101010101010101010 6
+b10101010101010101010101010101010 <
+b1111 Q
+#80000000
+0!
+#85000000
+1!
+b0000 Q
+b00000000000000000000000000000000 <
+b00000000000000000000000000000000 6
+b00000000000000000000000000000000 ,
+07
+b0000 =
+0$
+0#
+#90000000
+0!
+#95000000
+1!
+1#
+0@
+1%
+b0000 D
+b0000000000000000 (
+b10111011101110111011101110111011 )
+b0000000000000000 :
+b10111011101110111011101110111011 ;
+b0000 A
+b1111 B
+#100000000
+0!
+#105000000
+1!
+1@
+1$
+b1111 =
+18
+b1111 O
+#110000000
+0!
+#115000000
+1!
+b0000 O
+08
+b0000 =
+0$
+0#
+b10111011101110111011101110111011 T
+b10111011101110111011101110111011 1
+b10111011101110111011101110111011 .
+#120000000
+0!
+#125000000
+1!
+1#
+0@
+0%
+#130000000
+0!
+#135000000
+1!
+1@
+1$
+b1111 =
+17
+b10111011101110111011101110111011 ,
+b10111011101110111011101110111011 6
+b10111011101110111011101110111011 <
+b1111 N
+#140000000
+0!
+#145000000
+1!
+b0000 N
+b00000000000000000000000000000000 <
+b00000000000000000000000000000000 6
+b00000000000000000000000000000000 ,
+07
+b0000 =
+0$
+0#
+#150000000
+0!
+#155000000
+1!
+1#
+0@
+1%
+b0000 B
+b0100 A
+b11001100110011001100110011001100 ;
+b0000000000000100 :
+b11001100110011001100110011001100 )
+b0000000000000100 (
+b1111 C
+#160000000
+0!
+#165000000
+1!
+1@
+1$
+18
+1?
+1>
+15
+1+
+#170000000
+0!
+#175000000
+1!
+0+
+05
+0>
+0?
+08
+0$
+0#
+#180000000
+0!
+#185000000
+1!
+1#
+0@
+b0000 C
+b0000000000001100 (
+b0000000000001100 :
+b1100 A
+0%
+b1111 E
+#190000000
+0!
+#195000000
+1!
+1@
+1$
+1?
+1>
+15
+1+
+17
+#200000000
+0!
+#205000000
+1!
+07
+0+
+05
+0>
+0?
+0$
+0#
+#210000000
+0!
+#215000000
+1!
+0@
+#220000000
+0!
+#225000000
+1!
+#230000000
+0!
+#235000000
+1!
+#240000000
+0!
+#245000000
+1!
+#250000000
+0!
+#255000000
+1!
+b11011101110111011101110111011101 -
+#260000000
+0!
+#265000000
+1!
+1#
+b0000 E
+b0100 A
+b0000000000000100 :
+b0000000000000100 (
+b1111 C
+#270000000
+0!
+#275000000
+1!
+1@
+1$
+17
+b1111 =
+b11011101110111011101110111011101 ,
+b11011101110111011101110111011101 6
+b11011101110111011101110111011101 <
+b1111 P
+#280000000
+0!
+#285000000
+1!
+b0000 P
+b00000000000000000000000000000000 <
+b00000000000000000000000000000000 6
+b00000000000000000000000000000000 ,
+b0000 =
+07
+0$
+0#
+#290000000
+0!
+#295000000
+1!
+0@
+#300000000
+0!
+#305000000
+1!
+#310000000
+0!
+#315000000
+1!
+#320000000
+0!
+#325000000
+1!
+#330000000
+0!
+#335000000
+1!
+#335000001

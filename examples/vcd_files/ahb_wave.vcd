@@ -1,0 +1,493 @@
+$date
+	Thu May 22 14:18:01 2025
+
+$end
+$version
+	nvc 1.17-devel
+$end
+$timescale
+	1fs
+$end
+$scope module tb_top $end
+$var logic 1 ! clk $end
+$var logic 1 " rst_n $end
+$var logic 1 # hsel $end
+$var logic 2 $ htrans[1:0] $end
+$var logic 1 % hwrite $end
+$var logic 3 & hsize[2:0] $end
+$var logic 4 ' hprot[3:0] $end
+$var logic 1 ( hnonsec $end
+$var logic 1 ) hready $end
+$var logic 16 * haddr[15:0] $end
+$var logic 32 + hwdata[31:0] $end
+$var logic 1 , hreadyout $end
+$var logic 1 - hresp $end
+$var logic 32 . hrdata[31:0] $end
+$var logic 32 / register1_reg1_field0[31:0] $end
+$var logic 32 0 register0_reg0_field0[31:0] $end
+$var logic 32 1 register2_reg2_field0[31:0] $end
+$var logic 32 2 register3_reg3_field0[31:0] $end
+$scope module dut $end
+$var logic 1 ! clk $end
+$var logic 1 " rst_n $end
+$var logic 32 / register1_reg1_field0[31:0] $end
+$var logic 32 3 register0_reg0_field0[31:0] $end
+$var logic 32 4 register2_reg2_field0[31:0] $end
+$var logic 32 5 register3_reg3_field0[31:0] $end
+$var logic 1 # hsel $end
+$var logic 2 $ htrans[1:0] $end
+$var logic 1 % hwrite $end
+$var logic 3 & hsize[2:0] $end
+$var logic 4 ' hprot[3:0] $end
+$var logic 1 ( hnonsec $end
+$var logic 1 ) hready $end
+$var logic 16 * haddr[15:0] $end
+$var logic 32 + hwdata[31:0] $end
+$var logic 1 6 hreadyout $end
+$var logic 1 7 hresp $end
+$var logic 32 8 hrdata[31:0] $end
+$var logic 1 9 rd_ena $end
+$var logic 1 : wr_ena $end
+$var logic 4 ; byte_ena[3:0] $end
+$var logic 16 < addr[15:0] $end
+$var logic 32 = wr_data[31:0] $end
+$var logic 32 > rd_data[31:0] $end
+$var logic 4 ? valid_access[3:0] $end
+$var logic 1 @ bank_error $end
+$var logic 1 A access_error $end
+$var logic 1 B address_phase $end
+$var logic 1 C data_phase $end
+$var logic 1 D rd_request $end
+$var logic 1 E wr_request $end
+$var logic 4 F byte_request[3:0] $end
+$var logic 14 G haddr_d1[15:2] $end
+$var logic 1 H err_response_ph0 $end
+$var logic 1 I err_response_ph1 $end
+$var logic 4 J local_addr[3:0] $end
+$var logic 4 K register0_decoded[3:0] $end
+$var logic 4 L register1_decoded[3:0] $end
+$var logic 4 M register2_decoded[3:0] $end
+$var logic 4 N register3_decoded[3:0] $end
+$var logic 1 O register0_rd_unlocked $end
+$var logic 1 P register0_wr_unlocked $end
+$var logic 1 Q register1_rd_unlocked $end
+$var logic 1 R register1_wr_unlocked $end
+$var logic 1 S register2_rd_unlocked $end
+$var logic 1 T register2_wr_unlocked $end
+$var logic 1 U register3_rd_unlocked $end
+$var logic 1 V register3_wr_unlocked $end
+$var logic 4 W register0_rd_ena[3:0] $end
+$var logic 4 X register0_wr_ena[3:0] $end
+$var logic 4 Y register1_rd_ena[3:0] $end
+$var logic 4 Z register2_rd_ena[3:0] $end
+$var logic 4 [ register2_wr_ena[3:0] $end
+$var logic 4 \ register3_wr_ena[3:0] $end
+$var logic 32 ] reg0_reg0_field0[31:0] $end
+$var logic 32 ^ reg2_reg2_field0[31:0] $end
+$var logic 32 _ reg3_reg3_field0[31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX _
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ^
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ]
+b0000 \
+b0000 [
+b0000 Z
+b0000 Y
+b0000 X
+b0000 W
+1V
+1X
+1T
+1S
+1R
+1Q
+1P
+1O
+b0000 N
+b0000 M
+b0000 L
+b0000 K
+bXX00 J
+XI
+XH
+bXXXXXXXXXXXXXX G
+b1111 F
+XE
+XD
+XC
+XB
+XA
+X@
+b0000 ?
+b00000000000000000000000000000000 >
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX =
+bXXXXXXXXXXXXXX00 <
+bXXXX ;
+X:
+X9
+b00000000000000000000000000000000 8
+X7
+X6
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 5
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 4
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 3
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 2
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 1
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 0
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX /
+b00000000000000000000000000000000 .
+X-
+X,
+bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX +
+bXXXXXXXXXXXXXXXX *
+X)
+X(
+bXXXX '
+bXXX &
+X%
+bXX $
+X#
+1"
+0!
+$end
+#5000000
+1!
+#10000000
+0!
+0"
+0#
+b00 $
+0%
+b000 &
+b0000 '
+0(
+0)
+b0000000000000000 *
+b00000000000000000000000000000000 +
+1,
+0-
+b00000000000000000000000000000000 /
+b00000000000000000000000000000000 0
+b00000000000000000000000000000000 1
+b00000000000000000000000000000000 2
+b00000000000000000000000000000000 3
+b00000000000000000000000000000000 4
+b00000000000000000000000000000000 5
+16
+07
+09
+0:
+b0000 ;
+b0000000000000000 <
+b00000000000000000000000000000000 =
+0@
+0A
+0B
+0C
+0D
+0E
+b0001 F
+b00000000000000 G
+0H
+0I
+b0000 J
+b00000000000000000000000000000000 ]
+b00000000000000000000000000000000 ^
+b00000000000000000000000000000000 _
+#15000000
+1!
+#20000000
+0!
+1"
+#25000000
+1!
+#30000000
+0!
+#35000000
+1!
+b1111 F
+1E
+1B
+b0000000000001000 *
+1)
+b010 &
+1%
+b10 $
+1#
+#40000000
+0!
+#45000000
+1!
+b00 $
+0B
+0E
+b1000 J
+b00000000000010 G
+1C
+b10101010101010101010101010101010 =
+b0000000000001000 <
+b1111 ;
+1:
+b10101010101010101010101010101010 +
+b1111 ?
+b1111 M
+b1111 [
+#50000000
+0!
+#55000000
+1!
+b0000 [
+b0000 ?
+0:
+0C
+1B
+b10 $
+0%
+b10101010101010101010101010101010 ^
+1D
+b10101010101010101010101010101010 4
+b10101010101010101010101010101010 1
+#60000000
+0!
+#65000000
+1!
+0D
+b00 $
+0B
+1C
+b1111 ?
+19
+b10101010101010101010101010101010 .
+b10101010101010101010101010101010 8
+b10101010101010101010101010101010 >
+b1111 Z
+#70000000
+0!
+#75000000
+1!
+b0000 Z
+b00000000000000000000000000000000 >
+b00000000000000000000000000000000 8
+b00000000000000000000000000000000 .
+09
+b0000 ?
+0C
+1B
+b10 $
+1%
+1E
+b0000000000000000 *
+#80000000
+0!
+#85000000
+1!
+0E
+b00 $
+0B
+1C
+b1111 ?
+1:
+b0000 M
+b10111011101110111011101110111011 +
+b0000000000000000 <
+b10111011101110111011101110111011 =
+b00000000000000 G
+b0000 J
+b1111 K
+b1111 X
+#90000000
+0!
+#95000000
+1!
+b0000 X
+0:
+b0000 ?
+0C
+1B
+b10 $
+0%
+1D
+b10111011101110111011101110111011 ]
+b10111011101110111011101110111011 3
+b10111011101110111011101110111011 0
+#100000000
+0!
+#105000000
+1!
+0D
+b00 $
+0B
+1C
+b1111 ?
+19
+b10111011101110111011101110111011 .
+b10111011101110111011101110111011 8
+b10111011101110111011101110111011 >
+b1111 W
+#110000000
+0!
+#115000000
+1!
+b0000 W
+b00000000000000000000000000000000 >
+b00000000000000000000000000000000 8
+b00000000000000000000000000000000 .
+09
+b0000 ?
+0C
+1B
+b10 $
+1%
+1E
+b0000000000000100 *
+#120000000
+0!
+#125000000
+1!
+0E
+b00 $
+0B
+1C
+1:
+b0000 K
+b0100 J
+b00000000000001 G
+b11001100110011001100110011001100 =
+b0000000000000100 <
+b11001100110011001100110011001100 +
+1H
+1A
+1@
+17
+06
+1-
+0,
+b1111 L
+#130000000
+0!
+#135000000
+1!
+1,
+16
+0@
+0A
+0H
+0:
+0C
+1B
+b10 $
+b0000000000001100 *
+0%
+1D
+1I
+#140000000
+0!
+#145000000
+1!
+0I
+0D
+b00 $
+0B
+1C
+1H
+1A
+1@
+06
+0,
+b0000 L
+b0000000000001100 <
+b00000000000011 G
+b1100 J
+19
+b1111 N
+#150000000
+0!
+#155000000
+1!
+09
+1,
+16
+0@
+0A
+0H
+0C
+1I
+#160000000
+0!
+#165000000
+1!
+0I
+0-
+07
+#170000000
+0!
+#175000000
+1!
+#180000000
+0!
+#185000000
+1!
+#190000000
+0!
+#195000000
+1!
+b11011101110111011101110111011101 /
+#200000000
+0!
+#205000000
+1!
+1B
+b10 $
+1D
+b0000000000000100 *
+#210000000
+0!
+#215000000
+1!
+0D
+b00 $
+0B
+1C
+19
+b0000 N
+b0100 J
+b00000000000001 G
+b0000000000000100 <
+b1111 L
+b1111 ?
+b11011101110111011101110111011101 .
+b11011101110111011101110111011101 8
+b11011101110111011101110111011101 >
+b1111 Y
+#220000000
+0!
+#225000000
+1!
+b0000 Y
+b00000000000000000000000000000000 >
+b00000000000000000000000000000000 8
+b00000000000000000000000000000000 .
+b0000 ?
+09
+0C
+#230000000
+0!
+#235000000
+1!
+#240000000
+0!
+#245000000
+1!
+#250000000
+0!
+#255000000
+1!
+#260000000
+0!
+#265000000
+1!
+#265000001

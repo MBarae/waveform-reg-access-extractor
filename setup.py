@@ -1,13 +1,26 @@
 #!/usr/bin/env python3
 """Setup script for waveform-reg-access-extractor."""
 
+import os
+from pathlib import Path
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
+# Get the directory containing setup.py
+here = Path(__file__).parent
+
+# Read README
+readme_path = here / "README.md"
+with open(readme_path, "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+# Read requirements
+requirements_path = here / "requirements.txt"
+if requirements_path.exists():
+    with open(requirements_path, "r", encoding="utf-8") as fh:
+        requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+else:
+    # Fallback if requirements.txt is not found
+    requirements = ["pyvcd>=0.3.0", "PyYAML>=6.0", "lxml>=4.6.0"]
 
 setup(
     name="waveform-reg-access-extractor",

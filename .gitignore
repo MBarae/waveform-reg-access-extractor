@@ -131,6 +131,16 @@ dmypy.json
 # Project specific
 output/
 *.vcd
+# But allow example VCD files
+!examples/vcd_files/*.vcd
 *.txt
 *.log
 temp/
+
+# Secrets and environment files (security)
+*.env
+*.secrets.env
+**/.env
+**/*secrets*.env
+**/*token*
+**/*key*
